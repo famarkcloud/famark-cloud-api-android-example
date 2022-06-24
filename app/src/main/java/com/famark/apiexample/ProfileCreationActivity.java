@@ -56,11 +56,11 @@ public class ProfileCreationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 String systemName = String.valueOf(txtSystemName.getText());
                 String displayName = String.valueOf(txtDisplayName.getText());
-                HashMap<String, Object> credData = new HashMap<String, Object>();
-                credData.put("SystemName", systemName);
-                credData.put("DisplayName", displayName);
-                JSONObject credDataJson = new JSONObject(credData);
-                String request = credDataJson.toString();
+                HashMap<String, Object> profileData = new HashMap<>();
+                profileData.put("SystemName", systemName);
+                profileData.put("DisplayName", displayName);
+                JSONObject profileDataJson = new JSONObject(profileData);
+                String request = profileDataJson.toString();
                 cloudApi.execute("/System_Profile/CreateRecord", request, sessionID);
             }
         });

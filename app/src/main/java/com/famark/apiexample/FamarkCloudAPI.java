@@ -2,29 +2,25 @@ package com.famark.apiexample;
 
 import android.os.AsyncTask;
 import android.os.Build;
-
 import androidx.annotation.RequiresApi;
-
 import java.io.BufferedReader;
 import java.io.DataOutputStream;
-import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.Reader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
-import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class FamarkCloudAPI extends AsyncTask<String,Void,String> {
 
-    private OnAPICallback _callback;
+    private final OnAPICallback _callback;
     private String _errorMessage;
 
     public FamarkCloudAPI(OnAPICallback callback)
     {
         _callback = callback;
     }
+
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected String doInBackground(String... args) {

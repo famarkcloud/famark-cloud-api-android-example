@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/a975450/source/trials/famark-cloud-api-android-example/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/a975450/source/trials/famark-cloud-api-android-example/app/src/main/res/layout/activity_profile_creation.xml" value="0.1" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/FamarkAPIExample/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/FamarkAPIExample/app/src/main/res/layout/activity_profile_creation.xml" value="0.16111111111111112" />
         <entry key="..\:/Users/pc/AndroidStudioProjects/FamarkAPIExample/app/src/main/res/layout/activity_retrieve_records.xml" value="0.2" />

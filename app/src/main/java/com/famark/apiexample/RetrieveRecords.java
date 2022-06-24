@@ -1,14 +1,10 @@
 package com.famark.apiexample;
 
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.style.StyleSpan;
 import android.view.View;
 import android.view.autofill.AutofillValue;
 import android.widget.Button;
@@ -16,14 +12,14 @@ import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 
 public class RetrieveRecords extends AppCompatActivity {
 
@@ -72,11 +68,11 @@ public class RetrieveRecords extends AppCompatActivity {
         btnRetrieve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                HashMap<String, Object> credData = new HashMap<String, Object>();
-                credData.put("Columns", "DisplayName, SystemName");
-                credData.put("OrderBy", "DisplayName");
-                JSONObject credDataJson = new JSONObject(credData);
-                String request = credDataJson.toString();
+                HashMap<String, Object> requestData = new HashMap<>();
+                requestData.put("Columns", "DisplayName, SystemName");
+                requestData.put("OrderBy", "DisplayName");
+                JSONObject requestDataJson = new JSONObject(requestData);
+                String request = requestDataJson.toString();
                 cloudApi.execute("/System_Profile/RetrieveMultipleRecords", request, sessionID);
             }
         });
