@@ -5,6 +5,6 @@ This is a sample code showing how to call Famark Cloud API to store and retrieve
 1. This example requires **Famark Cloud Instance**, you can [register free instance](https://www.famark.com/Install/?ic=FreeDev) or sign in to your [existing instance](https://www.famark.com/) or [*download*](https://www.famark.com/cloud/products.htm) *Famark Cloud* for *Windows* or *Linux* platforms from [famark.com/cloud/products.htm](https://www.famark.com/cloud/products.htm).
 2. This example performs *Create, Retrieve, Update and Delete (CRUD)* actions on *Contact* entity present in *Business Solution*, so make sure you have the Business solution installed in your instance, if not then goto:- 
 *`Solutions > more actions button [...] > Import Solution > Import From Store > Business Solution Install > Import Solution`*
-3. Open Android Studio or VS Code, clone this repository, build and run the code to perform CRUD actions on Business > Contact entity.
+3. Open Android Studio clone this repository, build and run the code to perform CRUD actions on Business > Contact entity.
 
 *You can modify the code to perform these operations on your own entities.*
